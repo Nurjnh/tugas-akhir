@@ -46,7 +46,7 @@
 
    <li class="nav-item">
     <a class="nav-link {{checkRouteActive('admin/kategori-aset')}}" href="{{url('admin/kategori-aset')}}">
-     <i class="fa fa-star"></i> Kategori Aset
+     <i class="fa fa-star"></i> Jenis Aset
     </a>
   </li>
 
@@ -123,7 +123,7 @@
   </li>
 
     <li class="nav-item">
-    <a class="nav-link {{checkRouteActive('x/laporan-aset')}} {{ request()->is('x/laporan/*') ? 'active':'' }}" href="{{url('x/laporan-aset')}}">
+    <a class="nav-link {{checkRouteActive('x/laporan-aset')}} {{ request()->is('x/laporan/*') ? 'active':'' }}" href="{{url('x/laporan-aset')}}/{{date('Y')}}">
       <i class="fa fa-book"></i> Laporan Aset
     </a>
   </li>

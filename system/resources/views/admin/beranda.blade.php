@@ -40,7 +40,7 @@
     </div>
 
      <div class="col-md-3">
-        <div class="card bg-info text-white">
+        <div class="card bg-warning text-white">
             <a href="{{url('admin/aset')}}">
             <div class="card-body">
                 <center>

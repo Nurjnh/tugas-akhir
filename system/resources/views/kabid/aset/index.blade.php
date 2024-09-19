@@ -16,7 +16,7 @@
                 <tr>
                     <th class="text-center">No</th>
                     <th>Nama Aset</th>
-                    <th>Kategori Aset</th>
+                    <th>Jenis Aset</th>
                     <th>Jumlah/Unit</th>
                     <th class="text-center">Aksi</th>
                 </tr>
@@ -42,7 +42,7 @@
                 <tr>
                     <th class="text-center">No</th>
                     <th>Nama Aset</th>
-                    <th>Kategori Aset</th>
+                    <th>Jenis Aset</th>
                     <th>Jumlah/Unit</th>
                     <th class="text-center">Aksi</th>
                 </tr>

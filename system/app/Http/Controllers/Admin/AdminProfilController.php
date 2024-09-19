@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Auth;
 use App\Models\Admin;
+use App\Models\Bidang;
 
 class AdminProfilController extends Controller
 {
@@ -43,9 +44,13 @@ class AdminProfilController extends Controller
     }
 
     function update(Admin $admin){
+        $admin->nama = request('nama');
+        $admin->nip = request('nip');
+        $admin->jabatan = request('jabatan');
         $admin->email = request('email');
+        $admin->no_telp = request('no_telp');
         $admin->handleUploadFOto();
         $admin->save();
-        return redirect('x/profil')->with('success','Profil berhasil diupdate');
+        return redirect('admin/profil')->with('success','Profil berhasil diupdate');
     }
 }

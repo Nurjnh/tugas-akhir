@@ -10,7 +10,7 @@ class AdminKategoriasetController extends Controller
 {
     function index(){
         $data['list_kategori'] = KategoriAset::where('flag_erase',1)->get();
-         $data['title'] = "Kategori Aset";
+         $data['title'] = "Jenis Aset";
         return view('admin.kategori-aset.index',$data);
     }
 

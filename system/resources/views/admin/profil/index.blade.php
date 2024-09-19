@@ -23,7 +23,7 @@
                 <div class="text-danger">{{ $message }}</div>
             @enderror
                 <b>Biodata Diri</b>
-                <a href="{{url('x/profil',Auth::guard('admin')->id())}}/edit" class="btn float-right btn-sm btn-dark"><i class="fa fa-pen"></i> Edit</a>
+                <a href="{{url('admin/profil',Auth::guard('admin')->id())}}/edit" class="btn float-right btn-sm btn-dark"><i class="fa fa-pen"></i> Edit</a>
                 <table class="table">
                     <tr>
                         <th>Nama</th>

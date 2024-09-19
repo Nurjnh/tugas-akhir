@@ -3,7 +3,7 @@
 <div class="card">
     <div class="card-body">
         <h1>{{ucwords($detail->aset_nama)}}</h1>
-        <p><b>Kategori :</b> {{ucwords($detail->kategori->kategori_nama)}}</p>
+        <p><b>Jenis Aset :</b> {{ucwords($detail->kategori->kategori_nama)}}</p>
     </div>
 </div>
 
@@ -22,7 +22,7 @@
                     </tr>
 
                     <tr>
-                        <th>Kategori Aset</th>
+                        <th>Jenis Aset</th>
                         <td>: {{ucwords($detail->kategori->kategori_nama)}}</td>
                     </tr>
 
@@ -56,7 +56,7 @@
                             <th>Nama Pemegang</th>
                             <th>Bidang</th>
                             <th>Keadaan</th>
-                            <th>No Seri/Kode</th>
+                            <th>Nomor Aset</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -158,7 +158,7 @@
 
                 <div class="col-md-4">
                    <div class="form-group">
-                    <span> Nomor Seri/Kode Unik</span>
+                    <span>Nomor Notaris</span>
                     <input type="text" required class="form-control" name="unit_kode[]">
                 </div>
             </div>

@@ -5,7 +5,7 @@
 <div class="card">
 	<div class="card-body">
 		<center>
-			<h3>DATA KATEGORI ASET</h3>
+			<h3>DATA JENIS ASET</h3>
 		</center>
 
 		@if ($errors->any())
@@ -20,7 +20,7 @@
 
 		<!-- Button trigger modal -->
 		<button type="button" class="btn btn-primary mb-3 float-right" data-toggle="modal" data-target="#exampleModal">
-			<i class="fa fa-plus"></i>	Buat Kategori Aset
+			<i class="fa fa-plus"></i>	Buat Jenis Aset
 		</button>
 
 
@@ -29,7 +29,7 @@
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+						<h5 class="modal-title" id="exampleModalLabel"></h5>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
@@ -38,8 +38,8 @@
 						<form action="{{url('admin/kategori-aset/create')}}" method="post">
 							@csrf
 							<div class="form-group">
-								<span>Nama Kategori Aset</span>
-								<input type="text" placeholder="Nama Kategori Aset" name="kategori_nama" class="form-control">
+								<span>Nama Jenis Aset</span>
+								<input type="text" placeholder="Nama Jenis Aset" name="kategori_nama" class="form-control">
 							</div>
 
 							<button class="btn btn-sm btn-primary float-right"> <i class="fa fa-save"></i> Simpan</button>
@@ -56,7 +56,7 @@
 					<tr class="bg-primary text-white">
 						<th>No</th>
 						<th>Aksi</th>
-						<th>Nama Kategori Aset</th>
+						<th>Nama Jenis Aset</th>
 					</tr>
 				</thead>
 
@@ -75,7 +75,7 @@
 					<tr class="bg-primary text-white">
 						<th>No</th>
 						<th>Aksi</th>
-						<th>Nama Kategori Aset</th>
+						<th>Nama Jenis Aset</th>
 					</tr>
 				</tfoot>
 			</table>

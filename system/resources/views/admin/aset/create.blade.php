@@ -98,9 +98,9 @@
 
 				<div class="col-md-6">
 					<div class="form-group">
-						<span>Kategori Aset</span>
+						<span>Jenis Aset</span>
 						<select name="aset_kategori_id[]" required id="" class="form-control">
-							<option value="" hidden> -- Pilih Kategori Aset --</option>
+							<option value="" hidden> -- Pilih Jenis Aset --</option>
 							@foreach($kategori_aset as $kategori)
 							<option value="{{$kategori->kategori_id}}">{{ucwords($kategori->kategori_nama)}}</option>
 							@endforeach
@@ -191,9 +191,9 @@
 		<div class="row mt-5">
 		<div class="col-md-6">
 		<div class="form-group">
-		<span>Kategori Aset</span>
+		<span>Jenis Aset</span>
 		<select name="aset_kategori_id[]" required id="" class="form-control">
-		<option value="" hidden> -- Pilih Kategori Aset --</option>
+		<option value="" hidden> -- Pilih Jenis Aset --</option>
 		@foreach($kategori_aset as $kategori)
 							<option value="{{$kategori->kategori_id}}">{{ucwords($kategori->kategori_nama)}}</option>
 							@endforeach

@@ -18,13 +18,13 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <span>Nama Pemilik Akun</span>
-                        <input type="text" name="akun_nama" readonly value="{{ucwords(Auth::guard('admin')->user()->nama)}}" class="form-control" required>
+                        <input type="text" name="nama"  value="{{ucwords(Auth::guard('admin')->user()->nama)}}" class="form-control" required>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
                         <span>NIP Pemilik Akun</span>
-                        <input type="text" name="nip" class="form-control" readonly required value="{{ucwords(Auth::guard('admin')->user()->nip)}}">
+                        <input type="text" name="nip" class="form-control"  required value="{{ucwords(Auth::guard('admin')->user()->nip)}}">
                     </div>
                 </div>
             
@@ -32,7 +32,7 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <span>Jabatan</span>
-                        <input type="text" name="jabatan" class="form-control" readonly required value="{{ucwords(Auth::guard('admin')->user()->jabatan)}}">
+                        <input type="text" name="jabatan" class="form-control"  required value="{{ucwords(Auth::guard('admin')->user()->jabatan)}}">
                     </div>
                 </div>
 
@@ -47,7 +47,7 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <span>Bidang</span>
-                        <select name="akun_bidang_id" id="" class="form-control" readonly>
+                        <select name="akun_bidang_id" id="" class="form-control" >
                            
                             @foreach ($list_bidang as $item)
                                 <option  @if(Auth::guard('admin')->user()->akun_bidang_id == $item->bidang_id)  selected @endif value="{{$item->bidang_id}}" >{{ucwords($item->bidang_nama)}}</option>

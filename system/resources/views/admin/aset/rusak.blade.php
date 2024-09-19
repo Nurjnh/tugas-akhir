@@ -30,7 +30,7 @@
                     <th>Nama Pemegang</th>
                     <th>Nama Aset</th>
                     <th>Bidang</th>
-                    <th>Kode Unik</th>
+                    <th>Nomor Aset</th>
                     <th>Status</th>
                 </tr>
             </thead>
@@ -43,7 +43,7 @@
                     <td>{{ucwords($item->detail->aset_nama)}}</td>
                     <td>{{ucwords($item->bidang->bidang_nama)}}</td>
                     <td>{{strtoupper($item->unit_kode)}}</td>
-                    <td class="text-warning">Hilang</td>
+                    <td class="text-warning">Rusak</td>
                 </tr>
                 @endforeach
             </tbody>

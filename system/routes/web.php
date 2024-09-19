@@ -81,7 +81,7 @@ Route::middleware('auth:admin')->prefix('x')->group(function(){
     });
 
     Route::controller(KabidLaporanController::class)->group(function () {
-        Route::get('laporan-aset', 'index');
+        Route::get('laporan-aset/{tahun}', 'index');
     });
 });
 

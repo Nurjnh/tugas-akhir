@@ -8,9 +8,10 @@ use App\Models\AsetDetail;
 
 class KabidLaporanController extends Controller
 {
-    function index(){
-         $data['title'] = "Laporan Aset";
-        $data['list_aset'] = AsetDetail::all();
-        return view('kabid.laporan.index',$data);
-    }
+  function index($tahun){
+    $data['tahun_link'] = $tahun;
+    $data['list_aset'] = AsetDetail::whereYear('created_at',$tahun)->get();
+    $data['title'] = "Laporan Aset";
+    return view('kabid.laporan.index',$data);
+}
 }

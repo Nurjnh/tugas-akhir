@@ -4,7 +4,7 @@
 <div class="card">
     <div class="card-body">
         <center>
-            <h1>Data Aset Rusak</h1>
+            <h1>Data Aset Hilang</h1>
         </center>
     </div>
 </div>
@@ -30,7 +30,7 @@
                     <th>Nama Pemegang</th>
                     <th>Nama Aset</th>
                     <th>Bidang</th>
-                    <th>Kode Unik</th>
+                    <th>Nomor Aset</th>
                     <th>Status</th>
                 </tr>
             </thead>

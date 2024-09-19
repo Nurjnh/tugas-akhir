@@ -30,7 +30,7 @@
                     <th>Nama Pemegang</th>
                     <th>Nama Aset</th>
                     <th>Bidang</th>
-                    <th>Kode Unik</th>
+                    <th>Nomor Aset</th>
                     <th>Status</th>
                 </tr>
             </thead>
